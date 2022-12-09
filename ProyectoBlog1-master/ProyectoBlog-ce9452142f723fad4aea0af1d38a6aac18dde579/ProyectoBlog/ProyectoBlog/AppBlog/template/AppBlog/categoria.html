@@ -1,0 +1,26 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Recetas</h1>
+    <p>Ingresa un ingrediente para ver las miles de recetas disponibles</p>
+
+    <p>
+        ¡Seguinos en nuestras redes sociales y sumate a nuestras comunidades!
+    </p>
+    
+    Ingresa un ingrediente:
+    <br>
+    <form action=""    method="post">{% csrf_token %}
+        <table>
+            {{miFormulario.as_table}}
+        </table>
+        <input type="submit",value="Enviar">
+     </form>
+
+
+{% endblock %}

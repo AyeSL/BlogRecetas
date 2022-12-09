@@ -1,0 +1,18 @@
+{% extends "AppBlog/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    Camada : {{camada}}
+    <br>
+    Cursos: 
+    {%for curso in cursos%}
+        {{curso.nombre}}
+        {{curso.numero_dia}}
+        <br>
+    {%endfor%}
+  
+
+{% endblock %}
